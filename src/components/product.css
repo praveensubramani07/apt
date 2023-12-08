@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300&family=Quicksand:wght@300&display=swap');
+
+
+:root {
+    --main-color: rgba(230, 34, 34, 0.918);
+    --second-color:white;
+}
+
+*{
+    padding: 0;
+    margin:0;
+    font-family: montserrat;
+}
+
+.container{
+    display: flex;
+}
+.mob-img{
+    display: none;
+}
+.img-pc{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+.pc-1{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pc-1 .img-1{
+    width: 100%;
+    height: auto;
+}
+.pc-2{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pc-2 .img-2{
+    width: 50%;
+    height: auto;
+}
+.pc-2 .img-3{
+    width: 50%;
+    height: auto;
+}
+.pc-3{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pc-3 .img-4{
+    width: 100%;
+}
+
+
+.details{
+    width: 40%;
+    
+    margin-right: 30px;
+    margin-top: 20px;
+}
+.buy-btn{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    background-color: rgb(41, 40, 40);
+    color: white;
+    letter-spacing: 2px;
+}
+.tax{
+    font-size: 10px;
+    color: gray;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+.title{
+    font-weight: 500;
+}
+.price{
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.size-text{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.sizes{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.size{
+    border: 1px solid lightgray;
+    padding: 5px 20px;
+    background-color: white;
+}
+ul{
+
+}
+.pro-details{
+    margin-left: 10px;
+}
+li{
+    list-style: none;
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: rgb(143, 136, 136);
+}
+
+.img-mob{
+    display: none;
+}
+
+.loading-product{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+    width: 90%;
+    gap: 20px;
+}
+.skel{
+    background-color: lightgray;
+    width: 500px;
+    height: 500px;
+}
+
+
+
+@media (max-width: 768px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .img-pc{
+        display: none;
+    }
+    
+    .details{
+        width: 90%;
+        margin: 20px;
+    }
+    .img-mob{
+        display: block;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .loading-product{
+        flex-direction: column;
+    }
+    .buy-btn{
+        width: 100%;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 0;
+        background-color: rgb(41, 40, 40);
+        color: white;
+        letter-spacing: 2px;
+        position: fixed;
+        bottom: 5px;
+        margin-right: 20px;
+
+    }
+    .mob-img{
+        display: block;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .mob-img .img-1{
+        width: 80%;
+        height: auto;
+    }
+    .img-mob .mob-1{
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .img-mob .mob-1 .img-1{
+        width: 100%;
+        height: auto;
+    }
+    .mob-2{
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .mob-2 .img-2{
+        width: 50%;
+        height: auto;
+    }
+    .mob-2 .img-3{
+        width: 50%;
+        height: auto;
+    }
+    .mob-3{
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .mob-3 .img-4{
+        width: 100%;
+    }
+    
+}
