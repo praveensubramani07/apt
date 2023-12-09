@@ -70,7 +70,7 @@
     margin-top: 20px;
 }
 .buy-btn{
-    width: 100%;
+    width: 90%;
     height: 30px;
     display: flex;
     align-items: center;
@@ -79,6 +79,7 @@
     background-color: rgb(41, 40, 40);
     color: white;
     letter-spacing: 2px;
+    margin:auto;
 }
 .tax{
     font-size: 10px;
