@@ -35,7 +35,7 @@ const [menuAct, setMenuAct] = useState(false);
         try {
           // Fetch subcategories
           const subCategoriesResponse = await fetch(
-            `http://aptdashboard.000webhostapp.com/api/get_categorys.php`
+            `https://pranavresidency.com/aptdashboard/aptdashboard/api/get_categorys.php`
           );
           const subCategoriesData = await subCategoriesResponse.json();
           setSubCategories(subCategoriesData.data);
@@ -74,7 +74,7 @@ const [menuAct, setMenuAct] = useState(false);
             className="cat-items"
             onClick={() => handleSubCategoryClick(subCategory.name.trim())}
           >
-            <img src={`http://aptdashboard.000webhostapp.com/uploads${subCategory.image}`} />
+            <img src={`https://pranavresidency.com/aptdashboard/aptdashboard/uploads${subCategory.image}`} />
             <p className='cat-name'>{subCategory.name}</p>
           </div>
         ));
