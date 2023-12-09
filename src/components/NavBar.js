@@ -88,8 +88,9 @@ export default function NavBar() {
       <div className="nav">
         {(searchAct === false) ? (
           <>
-            <div className="ham" onClick={handleMenu}>
-              <img src="/assets/menu.png" alt="Menu" />
+            <div className="ham" onClick={handleMenu}>(searchAct === true) ?
+    (<img src="/assets/cancel.png" alt="Menu" />):
+      <img src="/assets/menu.png" alt="Menu" />
             </div>
             <Link to={'../'}>
             <div className="logo"><h1>APT</h1></div>
@@ -101,7 +102,7 @@ export default function NavBar() {
           </>
         ) : (
           <div className='search-active'>
-            <div className="search" onClick={handleSearchClick}><img src="/assets/sort.png" alt="Sort" /></div>
+            <div className="search" onClick={handleSearchClick}><img src="/assets/cancel.png" alt="Sort" /></div>
             <input type='search' onChange={handleKeyword} />
             <Link to={`/search/${keyword}`}>
               <div className="search"><img src="/assets/search.png" alt="Search" /></div>
