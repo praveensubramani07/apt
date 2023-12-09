@@ -66,7 +66,7 @@ export default function NavBar() {
           className="menu-item"
           onClick={() => handleSubCategoryClick(subCategory.name.trim())}
         >
-          <img src={`https://pranavresidency.com/aptdashboard/aptdashboard/uploads${subCategory.image}`} />
+          <img src={`https://pranavresidency.com/aptdashboard/aptdashboard/uploads/${subCategory.image}`} />
           <p>{subCategory.name}</p>
         </div>
       ));
