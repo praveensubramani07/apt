@@ -27,7 +27,7 @@ export default function NavBar() {
       try {
         // Fetch subcategories
         const subCategoriesResponse = await fetch(
-          `http://aptdashboard.000webhostapp.com/api/get_categorys.php`
+          `https://pranavresidency.com/aptdashboard/aptdashboard/api/get_categorys.php`
         );
         const subCategoriesData = await subCategoriesResponse.json();
         setSubCategories(subCategoriesData.data);
@@ -66,7 +66,7 @@ export default function NavBar() {
           className="menu-item"
           onClick={() => handleSubCategoryClick(subCategory.name.trim())}
         >
-          <img src={`http://aptdashboard.000webhostapp.com/uploads${subCategory.image}`} />
+          <img src={`https://pranavresidency.com/aptdashboard/aptdashboard/uploads${subCategory.image}`} />
           <p>{subCategory.name}</p>
         </div>
       ));
