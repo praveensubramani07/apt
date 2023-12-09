@@ -171,7 +171,7 @@ li{
         flex-direction: column;
     }
     .buy-btn{
-        width: 100%;
+        width: 90%;
         height: 30px;
         display: flex;
         align-items: center;
@@ -182,7 +182,7 @@ li{
         letter-spacing: 2px;
         position: fixed;
         bottom: 5px;
-        margin-right: 20px;
+        margin: auto;
 
     }
     .mob-img{
