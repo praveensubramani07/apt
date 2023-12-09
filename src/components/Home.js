@@ -103,7 +103,7 @@ const [menuAct, setMenuAct] = useState(false);
         </div>
     </div>
     <p className="cat">Fashion Categories</p>
-    <div className="categorys">
+    <div className="categoryss">
         {renderSubCategories()}
         {/* Repeat the above div for other categories */}
     </div>
