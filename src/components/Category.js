@@ -20,14 +20,14 @@ export default function Categorys() {
       try {
         // Fetch subcategories
         const subCategoriesResponse = await fetch(
-          `http://aptdashboard.000webhostapp.com/api/get_subCat.php?category=${category}`
+          `https://pranavresidency.com/aptdashboard/aptdashboard/api/get_subCat.php?category=${category}`
         );
         const subCategoriesData = await subCategoriesResponse.json();
         setSubCategories(subCategoriesData.data);
         setLoadingSubcategories(false);
 
         // Fetch products based on category, sorting, and page
-        let apiUrl = "http://aptdashboard.000webhostapp.com/api/get_products.php";
+        let apiUrl = "https://pranavresidency.com/aptdashboard/aptdashboard/api/get_products.php";
         if (category && category !== "viewall") {
           apiUrl += `?category=${category}`;
         }
@@ -173,7 +173,7 @@ export default function Categorys() {
 
               <div key={product.id} className="product">
                 <img
-                  src={`http://aptdashboard.000webhostapp.com/uploads/${product.image1}`}
+                  src={`https://pranavresidency.com/aptdashboard/aptdashboard/uploads/${product.image1}`}
                   alt={product.title}
                 />
                 <p className="title">{product.title}</p>
