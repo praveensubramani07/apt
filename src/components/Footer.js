@@ -10,7 +10,7 @@ export default function Footer() {
         
         <ul className="list-inline">
         <Link to={'./about'}>
-          <li className="list-inline-item">Home</li>
+          <li className="list-inline-item">About</li>
           </Link>
         </ul>
         <p className="copyright">AptMen © </p>
