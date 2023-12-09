@@ -89,7 +89,7 @@ export default function NavBar() {
         {(searchAct === false) ? (
           <>
                  <div className="ham" onClick={handleMenu}>
-                {searchAct ? (
+                {menuAct ? (
                   <img src="/assets/cancel.png" alt="Menu" />
                 ) : (
                   <img src="/assets/menu.png" alt="Menu" />
