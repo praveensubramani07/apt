@@ -210,6 +210,7 @@ li{
         display: flex;
         align-items: center;
         justify-content: center;
+        gap:10px;
     }
     .mob-2 .img-2{
         width: 50%;
