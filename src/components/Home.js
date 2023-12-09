@@ -74,7 +74,7 @@ const [menuAct, setMenuAct] = useState(false);
             className="cat-items"
             onClick={() => handleSubCategoryClick(subCategory.name.trim())}
           >
-            <img src={`https://pranavresidency.com/aptdashboard/aptdashboard/uploads${subCategory.image}`} />
+            <img src={`https://pranavresidency.com/aptdashboard/aptdashboard/uploads/${subCategory.image}`} />
             <p className='cat-name'>{subCategory.name}</p>
           </div>
         ));
