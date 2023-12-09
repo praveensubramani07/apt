@@ -96,10 +96,10 @@ const [menuAct, setMenuAct] = useState(false);
     <NavBar/>
     <div className="main-ban">
         <div className="ban-1">
-            <img src="/assets/product.jpg" alt="banner-1" />
+            <img src="/assets/IMG_20231209_120235.jpg" alt="banner-1" />
         </div>
         <div className="ban-2">
-            <img src="/assets/product.jpg" alt="banner-2" />
+            <img src="/assets/IMG_20231209_120248.jpg" alt="banner-2" />
         </div>
     </div>
     <p className="cat">Fashion Categories</p>
