@@ -88,11 +88,14 @@ export default function NavBar() {
       <div className="nav">
         {(searchAct === false) ? (
           <>
-            <div className="ham" onClick={handleMenu}>
-              (searchAct === true) ?
-                  <img src="/assets/cancel.png" alt="Menu" />:
+                 <div className="ham" onClick={handleMenu}>
+                {searchAct ? (
+                  <img src="/assets/cancel.png" alt="Menu" />
+                ) : (
                   <img src="/assets/menu.png" alt="Menu" />
-            </div>
+                )}
+              </div>
+
             <Link to={'../'}>
             <div className="logo"><h1>APT</h1></div>
             </Link>
