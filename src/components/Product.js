@@ -11,7 +11,7 @@ export default function Product() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch(`http://aptdashboard.000webhostapp.com/api/get_product.php?title=${title}`);
+        const response = await fetch(`https://pranavresidency.com/aptdashboard/aptdashboard/api/get_product.php?title=${title}`);
         const data = await response.json();
         setProductData(data.data[0]); // Assuming the API response is in the correct format
         setLoading(false);
@@ -50,18 +50,18 @@ export default function Product() {
       <div className="container">
         <div className="img-pc">
           <div className="pc-1">
-            <img className="img-1" src={`http://aptdashboard.000webhostapp.com/uploads/${productData.image1}`} alt={productData.title} />
+            <img className="img-1" src={`https://pranavresidency.com/aptdashboard/aptdashboard/uploads/${productData.image1}`} alt={productData.title} />
           </div>
           <div className="pc-2">
-            <img className="img-2" src={`http://aptdashboard.000webhostapp.com/uploads/${productData.image2}`} alt={productData.title} />
-            <img className="img-3" src={`http://aptdashboard.000webhostapp.com/uploads/${productData.image3}`} alt={productData.title} />
+            <img className="img-2" src={`https://pranavresidency.com/aptdashboard/aptdashboard/uploads/${productData.image2}`} alt={productData.title} />
+            <img className="img-3" src={`https://pranavresidency.com/aptdashboard/aptdashboard/uploads/${productData.image3}`} alt={productData.title} />
           </div>
           <div className="pc-3">
-            <img className="img-4" src={`http://aptdashboard.000webhostapp.com/uploads/${productData.image4}`} alt={productData.title} />
+            <img className="img-4" src={`https://pranavresidency.com/aptdashboard/aptdashboard/uploads/${productData.image4}`} alt={productData.title} />
           </div>
         </div>
         <div className="mob-img">
-          <img className="img-1" src={`http://aptdashboard.000webhostapp.com/uploads/${productData.image1}`} alt={productData.title} />
+          <img className="img-1" src={`https://pranavresidency.com/aptdashboard/aptdashboard/uploads/${productData.image1}`} alt={productData.title} />
         </div>
         <div className="details">
           <p className="title">{productData.title}</p>
@@ -89,11 +89,11 @@ export default function Product() {
         </div>
         <div className="img-mob">
           <div className="mob-2">
-            <img className="img-2" src={`http://aptdashboard.000webhostapp.com/uploads/${productData.image2}`} alt={productData.title} />
-            <img className="img-3" src={`http://aptdashboard.000webhostapp.com/uploads/${productData.image3}`} alt={productData.title} />
+            <img className="img-2" src={`https://pranavresidency.com/aptdashboard/aptdashboard/uploads/${productData.image2}`} alt={productData.title} />
+            <img className="img-3" src={`https://pranavresidency.com/aptdashboard/aptdashboard/uploads/${productData.image3}`} alt={productData.title} />
           </div>
           <div className="mob-3">
-            <img className="img-4" src={`http://aptdashboard.000webhostapp.com/uploads/${productData.image4}`} alt={productData.title} />
+            <img className="img-4" src={`https://pranavresidency.com/aptdashboard/aptdashboard/uploads/${productData.image4}`} alt={productData.title} />
           </div>
         </div>
       </div>
