@@ -164,7 +164,7 @@ li{
         grid-template-columns: 1fr;
         align-items: center;
         justify-content: center;
-        
+        gap:10px;
     }
     .loading-product{
         flex-direction: column;
