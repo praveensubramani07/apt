@@ -226,11 +226,12 @@ a{
     margin-right: 10px;
 }
 .menu{
-    position: absolute;
+    position: fixed;
     width:300px;
     height: 100vh;
     background-color: white;
     z-index: 999;
+    top:60;
 }
 .menu-item{
     width: 80%;
